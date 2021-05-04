@@ -1,1 +1,2 @@
-# TNDemo
+# DemoCovidTracker
+DemoCovidTracker

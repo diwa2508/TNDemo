@@ -1,0 +1,91 @@
+<div class="main-content">
+    <div class="container-fluid">
+    </div>
+    <div class="form-group">
+      <!-- Select Bed module-->
+      <div class="input-group no-border">
+        <h5>Select bed</h5><div class="form-check">
+          &nbsp;
+          <label class="form-check-label">
+            <input class="btn btn-info" type="checkbox" value="all" checked='True'>All
+
+          </label>
+          <label class="form-check-label">
+              <input class="btn btn-info" type="checkbox" value="cb" >Covid Beds
+          </label>
+          &nbsp;
+          <label class="form-check-label">
+            <input class="btn btn-info" type="checkbox" value="os" >Oxygen Supported
+          </label>
+          &nbsp;
+          <label class="form-check-label">
+            <input class="btn btn-info" type="checkbox" value="nos">Non-Oxygen Supported
+          </label>
+          &nbsp;
+          <label class="form-check-label">
+            <input class="btn btn-info" type="checkbox" value="icu">ICU
+
+          </label>
+          &nbsp;
+          <label class="form-check-label">
+            <input class="btn btn-info" type="checkbox" value="vb">Ventilator
+
+          </label>
+        </div>
+        
+     </div>
+     
+     <!--search module -->
+     <div class="input-group no-border width=50%">
+      <input type="text" value="" class="form-control" placeholder="Enter Hospital Name">
+      <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
+        <i class="material-icons">search</i>
+        <div class="ripple-container"></div>
+      </button>
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="card">
+                <!-- <div class="card-header card-header-warning">
+                    <h4 class="card-title">Districtwise Status</h4>
+                      <p class="card-category">Last Update</p>
+                </div>-->
+                <div class="card-body table-responsive">
+                    <table class="table table-hover">
+                        <thead class="text-warning">
+                            <th>S_No</th>
+                            <th>District</th>
+                            <th>Institution</th>
+                            <th>Covid_Beds_Total</th>
+                            <th>Covid_Beds_Occupied</th>
+                            <th>Covid_Beds_Free</th>
+                            <th>Oxygen_Supported_Beds</th>
+                            <th>Oxygen_Supported_Occupied</th>
+                            <th>Oxygen_Supported_Free</th>
+                            <th>Non_Oxygen_Supported_Beds</th>
+                            <th>Non_Oxygen_Supported_Occupied</th>
+                            <th>Non_Oxygen_Supported_Free</th>
+                            <th>Icu_Beds_Total</th>
+                            <th>Icu_Beds_Occupied</th>
+                            <th>Icu_Beds_Free</th>
+                            <th>Ventilator_Beds</th>
+                            <th>Ventilator_Occupied</th>
+                            <th>Ventilator_Free</th>
+                            <th>Last_Updated</th>
+                            <th>Contact_Number</th>
+                            <th>Remarks</th>
+                        </thead>
+                        <tbody>
+                          <tr><td>1</td><td>Ariyalur</td>	<td>A.S Hospital</td>	<td>25</td>	<td>15</td>	<td>3</td>	<td>8</td>	<td>6</td>	<td>2</td>	<td>12</td>	<td>9</td>	<td>1</td>	<td>5</td>	<td>0</td>	<td>5</td>	<td>0</td>	<td>7</td></tr>
+                          <tr><td>2</td><td>Ariyalur</td>	<td>Golden Hospital</td>	<td>31</td>	<td>12</td>	<td>22</td>	<td>23</td>	<td>8</td>	<td>22</td>	<td>3</td>	<td>0</td>	<td>22</td>	<td>5</td>	<td>4</td>	<td>22</td>	<td>0</td>	<td>0</td></tr>
+                          <tr><td>3</td><td>Chengalpattu</td>	<td>Annai Arul Hospital</td>	<td>40</td>	<td>40</td>	<td></td>	<td>30</td>	<td>30</td>	<td>800</td>	<td>5</td>	<td>5</td>	<td>800</td>	<td>5</td>	<td>5</td>	<td>800</td>	<td>3</td>	<td>3</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
