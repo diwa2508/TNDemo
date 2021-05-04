@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as Chartist from 'chartist';
+import { MongodbService } from '../services/mongodb.service';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -7,8 +9,22 @@ import * as Chartist from 'chartist';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  dataObj:any=[];
 
-  constructor() { }
+  constructor(private mongoService: MongodbService) {
+    this.connect1();
+  };  
+  connect1() {
+    this.mongoService.getAllHospitals()
+      .subscribe(
+        data => {
+          this.dataObj = data;
+        },
+        error => {
+          console.log(error);
+        });
+  }
+  disconnect() {}
   startAnimationForLineChart(chart){
       let seq: any, delays: any, durations: any;
       seq = 0;

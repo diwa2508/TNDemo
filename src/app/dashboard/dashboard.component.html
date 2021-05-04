@@ -3,12 +3,12 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="card card-stats">
-                    <div class="card-header card-header-warning card-header-icon">
+                    <div class="card-header card-header-warning card-header-icon" *ngIf="dataObj.length">
                         <div class="card-icon">
                             <i class="material-icons">bed</i>
                         </div>
                         <p class="card-category">Covid Beds</p>
-                        <h4 class="card-title">19365/25032
+                        <h4 class="card-title">{{dataObj[0].covid_beds_occupied}}/{{dataObj[0].covid_beds_total}}
 
                         </h4>
                     </div>
@@ -22,12 +22,12 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="card card-stats">
-                    <div class="card-header card-header-success card-header-icon">
+                    <div class="card-header card-header-success card-header-icon" *ngIf="dataObj.length">
                         <div class="card-icon">
                             <i><img src="./assets/img/oxygen.png" width="50 px" height="50 px"></i>
                         </div>
                         <p class="card-category">Oxygen Supported Beds</p>
-                        <h4 class="card-title">11751/13754</h4>
+                        <h4 class="card-title">{{dataObj[0].oxygen_supported_occupied}}/{{dataObj[0].oxygen_supported_beds}}</h4>
                     </div>
                     <div class="card-footer">
                         <div class="stats">
@@ -38,12 +38,12 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="card card-stats">
-                    <div class="card-header card-header-danger card-header-icon">
+                    <div class="card-header card-header-danger card-header-icon" *ngIf="dataObj.length">
                         <div class="card-icon">
                             <i><img src="./assets/img/nonoxygen.png" width="50 px" height="50px"></i>
                         </div>
                         <p class="card-category">Non-Oxygen Supported</p>
-                        <h4 class="card-title">5136/8214</h4>
+                        <h4 class="card-title">{{dataObj[0].non_oxygen_supported_occupied}}/{{dataObj[0].non_oxygen_supported_beds}}</h4>
                     </div>
                     <div class="card-footer">
                         <div class="stats">
@@ -54,12 +54,12 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="card card-stats">
-                    <div class="card-header card-header-info card-header-icon">
+                    <div class="card-header card-header-info card-header-icon" *ngIf="dataObj.length">
                         <div class="card-icon">
                             <i><img src="./assets/img/ICUBed.png" width="50 px" height="50 px"></i>
                         </div>
                         <p class="card-category">ICU Beds</p>
-                        <h4 class="card-title">2478/3095</h4>
+                        <h4 class="card-title">{{dataObj[0].icu_beds_occupied}}/{{dataObj[0].icu_beds_total}}</h4>
                     </div>
                     <div class="card-footer">
                         <div class="stats">
@@ -70,13 +70,13 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="card card-stats">
-                    <div class="card-header card-header-info card-header-icon">
+                    <div class="card-header card-header-info card-header-icon" *ngIf="dataObj.length">
                         <div class="card-icon">
                             <i><img src="./assets/img/ventilator.png" width="50 px" height="50 px"></i>
                         </div>
                         <p class="card-category">Ventilator
                         </p>
-                        <h4 class="card-title">1371/1371</h4>
+                        <h4 class="card-title">{{dataObj[0].ventilator_occupied}}/{{dataObj[0].ventilator_beds}}</h4>
                     </div>
                     <div class="card-footer">
                         <div class="stats">

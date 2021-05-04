@@ -15,7 +15,7 @@ import 'rxjs/add/operator/map';
 
 import { hospitals } from '../models/hospital.model';
 
-const baseUrl = 'https://democovidmongoserver.herokuapp.com/showHospitalList';
+const baseUrl = 'https://democovidmongoserver.herokuapp.com/showHospitals';
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +27,10 @@ export class MongodbService {
   getAll(): Observable<hospitals[]> {
     //console.log(Observable<hospitals[]>);
     return this.http.get<hospitals[]>(baseUrl);
+  }
+
+  getAllHospitals() {
+    return this.http.get(baseUrl);
   }
 
   get(id): Observable<any> {
